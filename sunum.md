@@ -120,3 +120,97 @@ bir de son olarak:
 ```
 
 ---
+
+# kısa proje
+
+aşağıda bir öğrencinin aldığı notlar bulunmaktadır. bu öğrencinin ağırlıklı ortalamasını bulan bir program yazın.
+
+dersler | katsayı | alınan not |
+:--- | :---: | ---: |
+matematik | 7 | 87 |
+fen bilimleri | 5 | 92 |
+türkçe | 10 | 75 |
+
+**challenge**: alınan notları komut satırından girdi olarak alın.
+
+---
+
+### kısaca ağırlıklı ortalama
+
+## $\frac{k_1 n_1 + k_2 n_2 + ... + k_i n_i}{k_1 + k_2 + ... + k_i}$
+
+burada $k$'ler derslerin katsayısını, $n$'ler de derslerde alınan notları temsil ediyor.
+
+---
+
+# sayıları karşılaştırma
+
+matematiksel ifadeler olarak: 
+
+$10 < 16$
+$12 > 8$
+$6 \geq 2$
+$7 \leq 8$
+$8 = \frac{40}{5}$
+$16 \ne 18$
+
+---
+
+# sayıları karşılaştırma
+
+sayıları karşılaştırma ifadeleri sonuç olarak *boolean* türünü verir.
+
+```python
+7 < 5 # 7 küçüktür 5 -> False (yanlış)
+12 > 8 # 12 büyüktür 8 -> True (doğru)
+6 >= 2 # 6 büyüktür veya eşittir 2 -> True (doğru)
+7 <= 8 # 7 küçüktür veya eşittir 8 -> True (doğru)
+8 == 40/5 # 8 eşittir 40/5 -> True (doğru)
+16 != 18 # 16 eşit değildir 18 -> True (doğru)
+```
+
+---
+
+# kontrol akışı
+
+##### **if (eğer) - elif (değilse eğer) - else (değilse)**
+
+kimi zaman programımızda çeşitli şartları kontrol etmek ve ona göre farklı kodlar çalıştırmak isteyebiliriz. 
+kontrol akışı yapıları bize bunu sağlar.
+
+---
+
+# if - elif - else
+
+if - elif - else yapısı biraz önce gösterdiğimiz *boolean* türünü veren bir ifadeyi ve değişkeni alarak çalıştıracağımız kodu kontrol etmemizi sağlar.
+
+```python
+sart: bool = 6 <= 4 
+
+if sart: # şart yerine direkt 
+# yukarıdaki ifadeyi de yazabilirsiniz
+    print("verdiğin ifade doğru!")
+else:
+    print("verdiğin ifade yanlış!")
+```
+
+---
+
+# if - elif - else
+
+örnek: 
+
+```python
+hava_durumu = input("güneşli -> 1, yağmurlu -> 2, bulutlu -> 3: ")
+
+if int(hava_durumu) == 1:
+    print("şemsiye almana gerek yok")
+elif int(hava_durumu) == 2:
+    print("şemsiye kesinlikle almalısın")
+elif int(hava_durumu) == 3:
+    print("bilemedim şemsiye alsam mı almasam mı")
+else:
+    print("hangi hava durumu bu ya, anlayamadım")
+```
+
+---
