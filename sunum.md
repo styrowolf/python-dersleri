@@ -7,6 +7,7 @@ theme: uncover
 # **programlamaya giriş**
 
 ## python dili
+
 ---
 
 # merhaba dünya!
@@ -19,13 +20,30 @@ print("merhaba dünya")
 
 ---
 
-# kısa analiz
+# merhaba ____!
+
+adımızla bizi karşılasa bu program çok güzel olur. hemen deneyelim:
+
+```python
+ad = input("adınız nedir: ")
+print("merhaba", ad)
+```
+
+---
+
+### analiz
 
 ```python
 print()
-``` 
+```
 
 fonksiyonu, argüman olarak verilen değişkeni veya değeri komut satırına yazar.
+
+```python
+input()
+```
+
+fonksiyonu, argüman olarak verilen yazıyı soru olarak kullanarak komut satırından girdi alır. bu girdi **str** türündedir.
 
 ---
 
@@ -58,7 +76,7 @@ not ortalaması: 83.5
 
 ---
 
-### analizler
+### analiz
 
 python'da değerlerin farklı türleri vardır.
 
@@ -74,4 +92,31 @@ türlere göre değerler farklı fonksiyonlarda kullanabilir, farklı şekilde d
 
 ---
 
-### analizler
+# matematiksel hesaplar
+
+dört işlem:
+
+```python
+7 + 5 # toplama operatörü: +
+12 - 9 # çıkarma operatörü: -
+3 * 7 # çarpma operatörü: *
+8 / 3 # bölme operatörü: /
+```
+
+---
+
+### diğer kullanışlı işlemler:
+
+![bg right:40% 100%](fotograflar/bolme.png)
+```python
+7 // 2 # (tam sayı) bölme operatörü: //
+7 % 2 # kalan hesaplama operatörü: %
+```
+
+bir de son olarak:
+
+```python
+8 ** 3 # kuvvetini alma operatörü: **
+```
+
+---
